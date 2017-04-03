@@ -5,7 +5,7 @@
 ** Login   <lecot_f@epitech.net>
 ** 
 ** Started on  Mon Dec  8 22:13:25 2014 Florian Lécot
-** Last update Thu Nov 24 17:24:24 2016 
+** Last update Mon Apr  3 17:40:24 2017 
 */
 
 #ifndef		WOLF_H_
@@ -163,5 +163,7 @@ void			my_aff_font(t_data *);
 void			my_aff_wall(t_data *);
 void			increase_FOV(t_data *);
 void			decrease_FOV(t_data *);
+void			increase_speed(t_data *);
+void			decrease_speed(t_data *);
 
 #endif			/*WOLF_H_*/

@@ -5,29 +5,11 @@
 ** Login   <lecot_f@epitech.net>
 ** 
 ** Started on  Sun Dec 21 02:35:47 2014 Florian Lécot
-** Last update Tue Nov 22 17:51:15 2016 
+** Last update Mon Apr  3 17:40:02 2017 
 */
 
 #include	<stdlib.h>
 #include	"wolf.h"
-
-static void	increase_speed(t_data *data)
-{
-  double	temp_speed;
-
-  temp_speed = SPEED + 0.005;
-  if (temp_speed < 0.40)
-    SPEED = temp_speed;
-}
-
-static void	decrease_speed(t_data *data)
-{
-  double	temp_speed;
-
-  temp_speed = SPEED - 0.005;
-  if (temp_speed > 0.05)
-    SPEED = temp_speed;
-}
 
 int		press_key(int key_c, t_data *data)
 {
@@ -136,25 +118,6 @@ int		gere_keycode(t_data *data)
   return (0);
 }
 
-/*
-void		gere_speed(int key_c, t_data *data)
-{
-  double	temp_speed;
-
-  if (key_c == 65365)
-    {
-      temp_speed = SPEED + 0.02;
-      if (temp_speed < 0.40)
-	SPEED = temp_speed;
-    }
-  if (key_c == 65366)
-    {
-      temp_speed = SPEED - 0.02;
-      if (temp_speed > 0.05)
-	SPEED = temp_speed;
-    }
-}
-*/
 void		switch_colors(t_data *data)
 {
   COLOR++;

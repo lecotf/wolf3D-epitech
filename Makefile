@@ -3,12 +3,12 @@
 ## Email : <contact.florianlecot@gmail.com>
 ## 
 ## Started on  Tue Nov 15 11:36:02 2016 
-## Last update Thu Nov 24 17:29:25 2016 
+## Last update Mon Apr  3 17:36:58 2017 
 ##
 
 NAME		=	wolf3D
 
-CC		=	gcc -O3
+CC		=	gcc
 
 RM		=	rm -f
 
@@ -32,8 +32,8 @@ SRCS		=	$(SRCPATH)/main.c		\
 			$(SRCPATH)/aff_font.c           \
 			$(SRCPATH)/aff_wall.c           \
 			$(SRCPATH)/color_world.c        \
-			$(SRCPATH)/modify_fov.c
-
+			$(SRCPATH)/fov.c		\
+			$(SRCPATH)/speed.c
 
 OBJS		=	$(SRCS:.c=.o)
 

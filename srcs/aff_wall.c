@@ -5,11 +5,12 @@
 ** Login   <lecot_f@epitech.net>
 ** 
 ** Started on  Tue Dec 23 16:44:15 2014 Florian Lécot
-** Last update Thu Nov 24 16:13:44 2016 
+** Last update Mon Apr  3 17:25:18 2017 
 */
 
-#include	"wolf.h"
+#include "wolf.h"
 #include <stdio.h>
+
 static void	aff_wall(t_data *data, unsigned char r, unsigned char g, unsigned char b)
 {
   int		compt;
